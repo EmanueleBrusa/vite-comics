@@ -22,5 +22,5 @@ export default {
 </template>
 
 <style lang="scss">
-
+@use './components/style/general.scss' as*;
 </style>

@@ -11,6 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../components/style/general' as *;
 h1{
     color: white;
 }
