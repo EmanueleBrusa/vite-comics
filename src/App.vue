@@ -21,6 +21,7 @@ export default {
   <AppFooterVue />
 </template>
 
-<style lang="">
-  
+<style lang="scss">
+  @use './style/general.scss' as*;
+  @use './partials/variables' as*;
 </style>
