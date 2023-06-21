@@ -42,33 +42,37 @@ export default {
     display: flex;
     justify-content: space-between;
     width: 80%;
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    li{
+    ul{
+        list-style-type: none;
         display: flex;
         align-items: center;
-        padding: 10px;
-        height: 100%;
-        &:hover{
-            border-bottom: 5px solid #0282f9;
-        }
-        a{
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 600;
-            color: black;
-     
+        li{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            height: 100%;
             &:hover{
-            color: #0282f9;
+                border-bottom: 5px solid #0282f9;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                font-size: 12px;
+                font-weight :bold;
+                color: black;
+         
+                &:hover{
+                color: #0282f9;
+            }
+            }
+            }
+    }
+    img{
+        width: 100px;
+        margin: 15px 0;
+        &:hover{
+            cursor:pointer;
         }
-        }
-        }
-}
-img{
-    width: 100px;
-    margin: 15px 0;
+    }
 }
 </style>
