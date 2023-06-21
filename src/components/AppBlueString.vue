@@ -17,10 +17,10 @@
                         <a href="#"><img src="../assets/buy-comics-subscriptions.png" alt="Img Sub">SUBSCRIPTION</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/buy-comics-shop-locator.png" alt="Img Shop Location">COMIC SHOP LOCATOR</a>
+                        <a href="#"><img src="../assets/buy-comics-shop-locator.png" alt="Img Shop Location" id="locator">COMIC SHOP LOCATOR</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/buy-dc-power-visa.svg" alt="Img Digital Comic">DC POWER VISA</a>
+                        <a href="#"><img src="../assets/buy-dc-power-visa.svg" alt="Img Digital Comic" id="visa">DC POWER VISA</a>
                     </li>
                 </ul>
             </div>
@@ -43,17 +43,28 @@ ul{
         display: flex;
         align-items: center;
         padding: 10px;
+        &:hover{
+            box-shadow: 0 0 5px 2px white;
+            border-radius: 5%;
+        }
         a{
             text-decoration: none;
             font-size: 15px;
             color: #fff;
             display: flex;
             align-items: center;
+            img{
+                width: 50px;
+                margin-right: 15px;
+            }
+            #locator{
+                height: 49px;
+                width: 40px;
+            }
+            #visa{
+                height: 49px;
+            }
         }
     }
-}
-img{
-    width: 50px;
-    margin-right: 15px;
 }
 </style>

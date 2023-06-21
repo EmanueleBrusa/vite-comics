@@ -19,7 +19,7 @@ h1{
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 70px;
+    padding: 50px;
     width: 100vw;
 }
 </style>

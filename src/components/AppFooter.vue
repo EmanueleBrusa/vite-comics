@@ -15,7 +15,7 @@
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#"><h4>SHOP</h4></a></li>
+                    <li id="shop"><a href="#"><h4>SHOP</h4></a></li>
                     <li><a href="#">Shop DC</a></li>
                     <li><a href="#">Shop DC Collectibles</a></li>
                 </ul>
@@ -70,30 +70,6 @@
     display: flex;
     align-items: center;
 }
-ul{
-    list-style-type: none;
-    padding: 50px 30px 40px 0;
-
-    li{
-        line-height: 1.5rem;
-        h4{
-            font-size: 20px;
-            color: #fff;
-            margin: 15px 0;
-        }
-
-        a{
-            color: #959595;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 400;
-        }
-        &:hover{
-            text-decoration: underline;
-            color: white;
-        }
-    }
-}
 .lists{
     display: flex;
     gap: 40px;
@@ -101,6 +77,35 @@ ul{
     background-image: url(../../public/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-position: right center;
+    ul{
+        list-style-type: none;
+        padding: 50px 30px 40px 0;
+        :first-child{
+            pointer-events: none;
+        }
+        #shop{
+            pointer-events: none;
+        }
+        li{
+            line-height: 1.5rem;
+            h4{
+                font-size: 20px;
+                color: #fff;
+                margin: 15px 0;
+            }
+    
+            a{
+                color: #959595;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 400;
+            }
+            &:hover{
+                text-decoration: underline;
+                color: white;
+            }
+        }
+    }
 }
 
 .container-sub{
@@ -114,11 +119,11 @@ ul{
             font-size: 15px;
             font-weight: 700;
             color: white;
-            border:solid #0282f9;
+            border:2px solid #0282f9;
             padding: 20px;
             background: #303030;
             &:hover{
-                box-shadow: 0 0 5px 2px #0282f9;
+                box-shadow: 0 0 20px 5px #0282f9;
                 cursor: pointer;
             }
         }
@@ -133,7 +138,7 @@ ul{
                 padding: 20px;
             }
             img:hover{
-                box-shadow: 0 0 10px 2px #0282f9;
+                box-shadow: 0 0 10px 5px #0282f9;
                 cursor: pointer;
                 border-radius: 50%;
             }
