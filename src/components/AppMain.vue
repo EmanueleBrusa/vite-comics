@@ -118,6 +118,11 @@ h1{
         }
         .card{
             width: calc(100% / 6);
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0 0 20px 5px #fff;
+                border-radius: 6%;
+            }
         }
         button#current{
             color: #fff;
@@ -138,6 +143,10 @@ h1{
             font-weight: 700;
             border: #0074e8;
             margin-top: 40px;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0 0 20px 5px #0282f9;
+            }
         }
     }
 }

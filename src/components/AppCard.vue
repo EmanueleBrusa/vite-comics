@@ -14,6 +14,18 @@ export default {
     </div>
 </template>
 
-<style lang="sccss" scoped>
-
+<style lang="scss" scoped>
+img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+h4, p{
+    font-weight: 700;
+    color: white;
+    padding: 0 20px;
+}
+p{
+    font-size: 12px;
+}
 </style>
