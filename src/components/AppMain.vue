@@ -3,11 +3,14 @@
 </script>
 
 <template lang="">
-    <div class="container">
-        <div class="row">
-            <h1>METTICI QUI LA ROBA PER DOMANI</h1>
-        </div>
+<div id="jumbotron">
+
+</div>
+<div class="container">
+    <div class="row">
+        <h1>METTICI QUI LA ROBA PER DOMANI</h1>
     </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
@@ -21,5 +24,12 @@ h1{
     justify-content: center;
     padding: 50px;
     width: 100vw;
+}
+#jumbotron{
+    background-image: url(../../public/jumbotron.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 </style>
